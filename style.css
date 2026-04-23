@@ -317,3 +317,75 @@ body.blur main {
   outline: none;
 }
 
+@media (max-width: 768px) {
+
+  .header-inner {
+    padding: 1.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 120px;
+    top: 5px;
+    right: 5px;
+    padding: 6px;
+    position: static;
+    display: block;
+    margin: 10px auto 0 auto;
+    transform: none;
+  }
+
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .intro {
+    padding: 1.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  /* MAP */
+  .map {
+    width: 1000px; /* kleiner, damit weniger Scroll nötig */
+  }
+
+  /* POPUP */
+  .popup-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .popup-scroll {
+    max-height: 55vh;
+  }
+
+  /* MENU BUTTON */
+  .menu-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .menu-content {
+    width: 180px;
+  }
+  .map-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+}
+
