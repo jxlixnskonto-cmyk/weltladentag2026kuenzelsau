@@ -122,15 +122,17 @@ document.querySelectorAll(".popup").forEach(popup => {
 const menuBtn = document.getElementById("menuToggle");
 const menuContent = document.getElementById("menuContent");
 
-menuBtn.addEventListener("click", () => {
-  menuContent.classList.toggle("hidden");
-});
+if (menuBtn && menuContent) {
 
-document.addEventListener("click", (e) => {
-  const menu = document.getElementById("menuContent");
-  const button = document.getElementById("menuToggle");
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menuContent.classList.toggle("hidden");
+  });
 
-  if (!menu.contains(e.target) && !button.contains(e.target)) {
-    menu.classList.add("hidden");
-  }
-});
+  document.addEventListener("click", (e) => {
+    if (!menuContent.contains(e.target) && !menuBtn.contains(e.target)) {
+      menuContent.classList.add("hidden");
+    }
+  });
+
+}

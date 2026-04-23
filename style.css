@@ -105,9 +105,11 @@ body {
 .map-container:active {
   cursor: grabbing;
 }
-.map {
-  width: 1400px;
-  position: relative;
+@media (max-width: 768px) {
+  .map {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
 }
 .pin {
   position: absolute;
@@ -191,9 +193,7 @@ body {
   margin: 15px 0;
 }
 
-.hidden {
-  display: none;
-}
+
 
 #closePopup {
   margin-top: 10px;
