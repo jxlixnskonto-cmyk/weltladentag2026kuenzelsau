@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktive Früchte Karte</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font (ähnlich clean wie Weltladen) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+
+<header class="header">
+  <div class="header-inner">
+
+    <!--Burger Menü-->
+    <div class="burger-menu">
+  <button id="menuToggle" class="menu-btn">
+    ☰ Menü
+  </button>
+
+  <nav id="menuContent" class="menu-content hidden">
+    <a href="index.html">Interaktive Karte</a>
+    <a href="fairvsunfair.html">Fair vs. Unfair</a>
+    <a href="wiefairbistdu.html">Wie fair bist du?</a>
+  </nav>
+</div>
+<!--Überschrift-->
+    <h1>Interaktive Früchte Karte</h1>
+    <p>Entdecke, woher die fairen Früchte wirklich kommen</p>
+
+    <img src="weltladenlogo.png" class="logo">
+
+  </div>
+</header>
+
+<main class="main">
+  <section class="intro">
+    
+    <h2>Willkommen beim Weltladentag 2026 im Weltladen Künzelsau</h2>
+    <p>
+      Klicke auf ein Land und erfahre mehr über die Herkunft verschiedener Früchte.
+    </p>
+  </section>
+  <section class="map-container">
+  <div class="map" id="map">
+    <img src="world.svg" alt="Weltkarte" class="world-map">
+    <div class="pin" data-country="Ecuador" style="top:59%; left:39%;"></div>
+<div class="pin" data-country="Italien" style="top:27%; left:75.5%;"></div>
+<div class="pin" data-country="Philippinen" style="top:49%; left:120%;"></div>
+<div class="pin" data-country="Paraguay" style="top:75%; left:47.2%;"></div>
+<div class="pin" data-country="Burkina Faso" style="top:48.5%; left:70%;"></div>
+<div class="pin" data-country="Deutschland" style="top:20%; left:74%;"></div>
+<div class="pin" data-country="Eswatini" style="top:77.6%; left:83%;"></div>
+  </div>
+</section>
+</main>
+
+<!-- Deutschland -->
+
+<div id="popup" class="popup hidden">
+  
+  <div class="popup-content">
+    <button id="closeX" class="close-x">✕</button>
+
+  <div class="popup-scroll">
+
+  <h2>Deutschland - Weltladen Künzelsau</h2>
+
+  <div class="popup-image">
+    <img src="weltladenaussen.jpg" alt="Weltladen Kuenzelsau">
+  </div>
+
+  <p>
+   Hier im Weltladen in Künzelsau kommen viele der Früchte und Fruchtprodukte aus aller Welt zusammen. Wir achten dabei besonders darauf, dass sie unter fairen Bedingungen angebaut und gehandelt wurden. <br> <br>
+Mit deinem Einkauf unterstützt du Produzentinnen und Produzenten in Ländern wie Ecuador, Uganda oder Indonesien und trägst dazu bei, dass sie gerechte Preise für ihre Arbeit erhalten. <br> <br>
+Gerade zum Weltladentag 2026 mit dem Motto „Fair fruchtet“ wird deutlich: Fairer Handel wirkt. Er sorgt nicht nur für bessere Lebensbedingungen, sondern bringt auch hochwertige und nachhaltige Produkte zu uns. <br> <br>
+So kannst du hier vor Ort ganz bewusst genießen – und gleichzeitig etwas Gutes bewirken.
+
+  </p>
+
+</div>
+
+<button id="scrollBtn" class="scroll-btn">↓</button>
+
+    
+
+  </div>
+
+  
+</div>
+
+<!-- Ecuador -->
+
+<div id="popup-ecuador" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Bananen aus Ecuador</h2>
+
+      <div class="popup-image">
+        <img src="waschen-IMG_2208.jpg" alt="Ecuador">
+      </div>
+
+      <p>
+In Ecuador wachsen viele der Bananen, die auch im Weltladen in Künzelsau verkauft werden. Oft stammen sie von kleinen Familienbetrieben, die ohne fairen Handel nur sehr geringe Preise für ihre Arbeit bekommen würden. <br><br>
+Durch den fairen Handel erhalten die Produzentinnen und Produzenten gerechtere Bezahlung und bessere Arbeitsbedingungen. So wird aus einer einfachen Banane mehr als nur ein Produkt – nämlich eine echte Unterstützung für die Menschen vor Ort.<br><br>
+Gerade zum Weltladentag 2026 mit dem Motto „Fair fruchtet“ wird deutlich: Jede Entscheidung im Laden hat Wirkung – von Ecuador bis hier nach Künzelsau.
+      </p>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+ 
+</div>
+
+<!-- Burkina Faso -->
+
+ <div id="popup-burkina" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Mangos aus Burkina Faso</h2>
+
+      <div class="popup-image">
+        <img src="IMG_2369.heic" alt="Burkina Faso" height="300">
+      </div>
+
+      <p>
+        Die Mangos im Weltladen in Künzelsau stammen aus Burkina Faso. Sie werden über den Freundeskreis Bareka bezogen, der den direkten Handel mit den Produzentinnen und Produzenten ermöglicht. <br><br>
+Durch diese Zusammenarbeit erhalten die Menschen vor Ort faire Preise für ihre Arbeit und bessere Perspektiven für ihre Zukunft. So wird aus einer Mango mehr als nur ein Produkt – sie steht für eine direkte Verbindung zwischen Burkina Faso und uns hier in Deutschland.
+      </p>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+</div>
+
+<!-- Italien -->
+
+ <div id="popup-italien" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Knast Kekse aus Italien</h2>
+
+      <div class="popup-image">
+        <img src="italien.jpg" alt="Keksherstellung in Italien" >
+      </div>
+
+      <p>
+Im Weltladen in Künzelsau gibt es die „Knastkekse“ mit Orange und Zitrone. Sie werden von der Sozialkooperative Arcolaio in Syrakus auf Sizilien hergestellt und über Weltpartner bezogen. <br><br>
+Dort arbeiten Menschen im Gefängnis an hochwertigen Backwaren und erhalten dadurch die Möglichkeit, neue Perspektiven für ihr Leben nach der Haft zu entwickeln. <br><br>
+Für die Kekse werden unter anderem italienische Bio-Zutaten wie Orangen und Zitronen sowie fair gehandelter Zucker verwendet. So zeigt das Projekt, dass fairer Handel auch innerhalb Europas soziale Wirkung haben kann.
+      </p>
+       <div class="popup-image">
+        <img src="Knastkekse.jpeg" alt="Knastkekse" >
+      </div>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+</div>
+
+
+
+<!-- Philippinen -->
+
+ <div id="popup-philippinen" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Mango Produkte aus den Philippinen</h2>
+
+      <div class="popup-image">
+        <img src="MangoPhilippinen.jpeg" alt="Philippinen">
+      </div>
+
+      <p>
+        Die Mangos aus den Philippinen sind Teil eines Fair-Trade-Projekts, das kleinbäuerlichen Familien eine stabile Lebensgrundlage ermöglicht. Durch faire Preise können sie ihre Felder sichern und der Armut entkommen, die besonders Kinder stark betrifft.<br><br>
+Ein Teil der Fair-Trade-Erlöse unterstützt außerdem die Organisation Preda, die sich auf den Philippinen für Kinderrechte einsetzt und missbrauchte sowie benachteiligte Kinder betreut.<br><br>
+Aus diesen Mangos entstehen verschiedene Produkte wie Mangoessig, Mangoaufstrich und viele weitere Spezialitäten, die zeigen, wie vielseitig fair gehandelte Früchte genutzt werden können.<br><br>
+So stehen die Mangos nicht nur für fruchtigen Geschmack, sondern auch für Schutz, Chancen und mehr Gerechtigkeit vor Ort.
+      </p>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+</div>
+
+<!-- Paraguay -->
+
+ <div id="popup-paraguay" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Bio Bonbons aus Paraguay</h2>
+
+      <div class="popup-image">
+        <img src="IngwerKirsch.jpeg" alt="Paraguay" >
+      </div>
+
+      <p>
+        Im Weltladen in Künzelsau werden Ingwer-Kirsch-Bonbons angeboten, deren Süße aus Bio-Rohrohrzucker aus Paraguay stammt. <br><br>
+Der Zucker kommt von Kleinbauern, die sich in der Kooperative Manduvirá zusammengeschlossen haben. Dort bauen sie neben Obst und Gemüse vor allem Zuckerrohr an und arbeiten gemeinsam an besseren Lebensbedingungen.<br><br>
+Durch den fairen Handel erhalten die Produzentinnen und Produzenten zusätzliche Prämien, die unter anderem den Bau einer eigenen Zuckermühle und neue Arbeitsplätze ermöglicht haben.
+      </p>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+</div>
+
+<!-- Eswatini -->
+
+ <div id="popup-eswatini" class="popup hidden">
+  
+  <div class="popup-content">
+    <button class="close-x">✕</button>
+
+    <div class="popup-scroll">
+
+      <h2>Mango-Konfitüre aus Eswatini</h2>
+
+      <div class="popup-image">
+        <img src="MangoKonfitüre.jpeg" alt="Eswatini">
+      </div>
+
+      <p>
+        Im Weltladen in Künzelsau gibt es Mango-Konfitüre aus Eswatini, die unter fairen Bedingungen hergestellt und verarbeitet wird. Produziert wird sie von Eswatini Kitchen, einem Partnerbetrieb der GEPA. <br><br>
+Dort erhalten vor allem alleinerziehende Frauen die Möglichkeit, ein eigenes Einkommen aufzubauen und wirtschaftlich unabhängig zu werden. Die Produktion findet direkt im Ursprungsland statt, sodass möglichst viel Wertschöpfung vor Ort bleibt.<br><br>
+Zusätzlich unterstützen die Produzentinnen soziale Projekte wie eine Suppenküche für mehrere Waisenhäuser. So verbindet die Konfitüre wirtschaftliche Perspektiven mit sozialem Engagement.
+      </p>
+
+    </div>
+
+    <button class="scroll-btn">↓</button>
+
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "DE": {
+    "name": "Deutschland",
+    "frucht": "Apfel"
+  },
+  "BR": {
+    "name": "Brasilien",
+    "frucht": "Banane"
+  }
+}
