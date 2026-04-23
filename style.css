@@ -105,12 +105,18 @@ body {
 .map-container:active {
   cursor: grabbing;
 }
+.map {
+  width: 1400px;
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .map {
     transform: scale(0.8);
     transform-origin: top left;
   }
 }
+
 .pin {
   position: absolute;
   width: 14px;
