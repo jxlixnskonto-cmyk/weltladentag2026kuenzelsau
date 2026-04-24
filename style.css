@@ -118,12 +118,7 @@ body {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .map {
-    transform: scale(0.8);
-    transform-origin: top left;
-  }
-}
+
 
 .pin {
   position: absolute;
@@ -373,6 +368,28 @@ body.blur main {
   }
 
   /* MAP */
+   .map {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+
+    .map {
+    width: 1400px; /* wieder groß */
+  }
+
+  .map-container {
+    overflow-x: auto;        /* wieder scrollen */
+    -webkit-overflow-scrolling: touch; /* smooth swipe */
+    cursor: grab;
+  }
+  .map-container::after {
+  content: "← wischen →";
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 5px;
+}
  
   /* POPUP */
   .popup-content {
