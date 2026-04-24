@@ -106,8 +106,16 @@ body {
   cursor: grabbing;
 }
 .map {
-  width: 1400px;
+  max-width: 1400px;
   position: relative;
+  width: 100%;
+}
+
+
+.world-map {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -365,10 +373,7 @@ body.blur main {
   }
 
   /* MAP */
-  .map {
-    width: 1000px; /* kleiner, damit weniger Scroll nötig */
-  }
-
+ 
   /* POPUP */
   .popup-content {
     width: 95%;
